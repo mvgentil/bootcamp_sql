@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS transactions (
 
 Caso queira usar UUID (para cenários de produção)
 
-```
+```sql
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE IF NOT EXISTS clients (
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS clients (
 );
 ```
 
-
+```sql
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE IF NOT EXISTS clients (
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS clients (
     saldo INTEGER NOT NULL,
     CHECK (saldo >= limite)
 );
-
+```
 
 
 **CREATE TABLE:**
